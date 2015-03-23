@@ -19,10 +19,6 @@ simian.say("cats are aliens");
 simian.how();
 
 
-
-
-
-
 // Bootstrap Angular JS
 
 var app = angular.module('myApp', [
