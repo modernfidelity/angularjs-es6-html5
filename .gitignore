@@ -31,4 +31,4 @@ node_modules
 .idea
 .DS_Store
 
-jspm_packages
+#jspm_packages
