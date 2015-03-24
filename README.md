@@ -18,4 +18,18 @@ npm install
 
 ## Running the Application
 
-Run the index.html through a web server i.e. http-server or apache...
+Run the index.html through a web server i.e. http-server via NodeJS or Apache...
+
+## Updating / Customising the Application
+
+The build process is handled via Grunt; which watches the the /js/src/* folder when running, and compiles
+out changes via the jspm bundle-sfx command. This transpiles the ES6 source code into browser friendly ES5, 
+and can be run successfully via Google Traceur-runtime.
+
+Open a new terminal window and run 
+
+```
+grunt
+```
+
+Any changes now made within /js/src will be picked up and transpiled into the /builds folder. 
