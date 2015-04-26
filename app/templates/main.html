@@ -1,0 +1,54 @@
+<h1>AngularJS ES6 & HTML5 Demo App</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 text-justify">
+            <p>Demo <a href="https://angularjs.org/">AngularJS</a> 1.3 app built with <a
+                    href="http://es6rocks.com/">ES6</a> modules using <a href="http://gruntjs.com/">Grunt</a>, <a
+                    href="http://jspm.io/">JSPM / SystemJS</a> and <a href="https://github.com/google/traceur-compiler">Traceur</a>.
+            </p>
+
+            <p>The <a href="http://www.html5rocks.com/en/">HTML5</a> template is via http://www.initializr.com/ using <a
+                    href="http://getbootstrap.com/">Bootstrap 3.x</a></p>
+
+            <h2 id="prerequisites">Prerequisites:</h2>
+            <blockquote>
+                node.js:
+                <code>$ brew install node</code>
+            </blockquote>
+            <h2 id="application-dependencies">Application Dependencies</h2>
+
+            <p>All the dependencies required for the build system, testing and so on are managed with npm and defined in
+                <code>package.json</code>. They can be installed with:</p>
+                <blockquote>
+                    <code>$ npm install</code>
+                </blockquote>
+
+            <h2 id="running-the-application">Running the Application</h2>
+
+            <p>Run the index.html through a web server i.e. http-server via NodeJS or Apache...</p>
+
+            <h2 id="updating-customising-the-application">Updating / Customising the Application</h2>
+
+            <p>The build process is handled via Grunt; which watches the the /js/src/* folder when running, and compiles
+                out changes via the jspm bundle-sfx command. This transpiles the ES6 source code into browser friendly
+                ES5,
+                and can be run successfully via Google Traceur-runtime.</p>
+
+            <p>Open a new terminal window and run </p>
+            <blockquote>
+                <code>$ grunt</code>
+            </blockquote>
+
+            <p>Any changes now made within /js/src will be picked up and transpiled into the /builds folder. </p>
+            <hr/>
+            <p class="copyright text-center">Based on
+                <a href="https://github.com/modernfidelity/angularjs-es6-html5" target="_blank">AngularJS ES6 & HTML5
+                    Demo App</a>
+                <br/>
+                Created by
+                <a href="http://www.modernfidelity.co.uk/" target="_blank">Mark Rushton</a> &
+                <a href="https://davidbreuer.herokuapp.com" target="_blank">David Breuer</a>
+            </p>
+        </div>
+    </div>
+</div>

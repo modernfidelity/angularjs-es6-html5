@@ -14,7 +14,12 @@
     "jspm": "^0.14.0"
   },
   "devDependencies": {
-    "grunt-shell": "^1.1.2"
+    "connect-modrewrite": "^0.7.11",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-shell": "^1.1.2",
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.1.1"
   },
   "jspm": {
     "directories": {

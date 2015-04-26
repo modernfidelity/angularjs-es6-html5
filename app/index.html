@@ -22,35 +22,9 @@
 
 </head>
 
-<body data-ng-app="myApp" data-ng-controller="mainController">
+<body data-ng-app="myApp">
 
-
-<div class="mrjumbotron">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>es6</h1>
-
-                <div data-hello-world></div>
-
-
-                <p>This is an example app built with AngularJS 1.x and ES6 from
-                    <span data-some-directive></span></p>
-
-
-                <p><a class="btn btn-primary btn-sm" href="#" role="button">Learn
-                    more &raquo;</a></p>
-
-                <p>1 + 1 = {{ 1 + 1 }}</p>
-
-                <div ng-view></div>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
+<div ng-view class="reveal-animation"></div>
 
 <!-- JAVASCRIPT -->
 
@@ -61,9 +35,10 @@
 
 
 <!-- AngularJS 1.x -->
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular-resource/angular-resource.min.js"></script>
-<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="../bower_components/angular-route/angular-route.min.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
 
 
 <!-- Example of runtime ES6 JS before JSPM bunle compile // moved to build process -->
@@ -77,7 +52,7 @@
 
 
 <!-- Tracuer + SystemJS -->
-<script src="jspm_packages/traceur-runtime.js"></script>
+<script src="../jspm_packages/traceur-runtime.js"></script>
 
 <!-- JSPM ES6 Compile of SRC (app.js) -->
 <script src="js/builds/build.js"></script>
