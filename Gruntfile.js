@@ -1,10 +1,23 @@
 module.exports = function (grunt) {
+    // Load grunt tasks automatically
+    require('load-grunt-tasks')(grunt);
+
+    // Time how long tasks take. Can help when optimizing build times
+    require('time-grunt')(grunt);
+
+    // Configurable paths for the application
+    var appConfig = {
+        app: require('./bower.json').appPath || 'app',
+        dist: 'dist'
+    };
 
     grunt.initConfig({
 
+        // Project settings
+        es6angularjs: appConfig,
 
         jshint: {
-            files: ['Gruntfile.js', 'js/src/*.js', 'js/src/**/*.js', 'test/**/*.js'],
+            files: ['Gruntfile.js', 'app/js/src/*.js', 'app/js/src/**/*.js', 'test/**/*.js', 'sass/*.scss'],
             options: {
                 globals: {
                     jQuery: true
@@ -14,7 +27,7 @@ module.exports = function (grunt) {
 
         watch: {
             files: ['<%= jshint.files %>'],
-            tasks: ['shell']
+            tasks: ['shell', 'sass:dist']
         },
 
         shell: {
@@ -22,19 +35,25 @@ module.exports = function (grunt) {
                 stderr: false
             },
             target: {
-                command: 'jspm bundle-sfx --minify ./js/src/main ./js/builds/build.js'
+                command: 'jspm bundle-sfx ./app/js/src/main ./app/js/builds/build.js'
+            }
+        },
+        sass: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'sass',
+                    src: ['*.scss'],
+                    dest: 'app/css',
+                    ext: '.css'
+                }]
             }
         }
 
     });
 
+    grunt.registerTask('default', [ 'watch']);
 
-    //grunt.loadNpmTasks('grunt-contrib-jshint');
 
-    grunt.loadNpmTasks('grunt-shell');
-
-    grunt.loadNpmTasks('grunt-contrib-watch');
-
-    grunt.registerTask('default', ['watch']);
 
 };

@@ -2,103 +2,83 @@
    3rd party imports
    ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
-
 /* ==========================================================================
    Author's custom styles
 
    ========================================================================== */
-
-
-
 .mrjumbotron {
   padding: 30px 15px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: lightblue;
-}
+  background-color: lightblue; }
 
 /* ==========================================================================
    Welcome page
    ========================================================================== */
-
-
 body {
   font-family: 'Roboto', Arial;
   color: #fff;
   background: #6cc5f1;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 .reveal-animation {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 #wrap {
   position: relative;
-  z-index: 10000;
-
-}
+  z-index: 10000; }
 
 .container {
-  margin: 0px auto;
-}
+  margin: 0px auto; }
 
 #defaultCountdown {
   z-index: 2;
   margin: 0 auto;
   display: table;
-  position: relative;
-}
+  position: relative; }
 
 h1 {
   font-size: 56px;
   font-weight: 300;
   text-align: center;
   letter-spacing: -1px;
-  line-height: 1em;
-}
+  line-height: 1em; }
 
 h1 span {
   font-size: 140px;
   font-weight: 900;
   letter-spacing: -5px;
-  line-height: 1.1em;
-}
+  line-height: 1.1em; }
 
 .green {
-  color: #e2ff1d;
-}
+  color: #e2ff1d; }
 
 .dots {
   font-size: 140px;
-  font-weight: 900;
-}
+  font-weight: 900; }
 
 .subtitle {
   font-size: 56px;
   font-weight: 900;
-  letter-spacing: -1px;
-}
+  letter-spacing: -1px; }
 
 p {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 100;
-}
+  font-weight: 100; }
 
 form {
   margin: 0 auto;
   display: table;
-  margin-top: 50px;
-}
+  margin-top: 50px; }
 
 input[type="text"] {
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
   -webkit-background-clip: padding-box !important;
   background-clip: padding-box !important;
   border: none;
@@ -107,8 +87,7 @@ input[type="text"] {
   font-family: 'Lato', Arial;
   font-size: 16px;
   padding-left: 20px;
-  width: 265px;
-}
+  width: 265px; }
 
 input[type="submit"] {
   font-family: 'Lato', Arial;
@@ -125,49 +104,37 @@ input[type="submit"] {
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
-  transition: all .3s ease;
-}
+  transition: all .3s ease; }
 
 input[type="submit"]:hover {
   color: #FFF;
-  background: #6e9b7d;
-}
+  background: #6e9b7d; }
 
 a {
   color: #fff;
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 p.copyright {
   font-size: 13px;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 @media (max-width: 420px) {
-
   h1, .subtitle {
     font-size: 32px;
-    line-height: 36px;
-  }
+    line-height: 36px; }
 
   h1 span, .dots {
-    font-size: 115px;
-  }
+    font-size: 115px; }
 
   input[type="text"] {
     width: 150px;
     font-size: 14px;
-    padding-left: 5px;
-  }
+    padding-left: 5px; }
 
   input[type="submit"] {
     left: -3px;
-    top: 5px;
-  }
-
-}
-
-.loader{
+    top: 5px; } }
+.loader {
   margin: 0 0 2em;
   height: 100px;
   width: 20%;
@@ -175,16 +142,13 @@ p.copyright {
   padding: 1em;
   margin: 0 auto 1em;
   display: inline-block;
-  vertical-align: top;
-}
+  vertical-align: top; }
 
 /*
   Set the color of the icon
 */
 svg path,
-svg rect{
-  fill: #e2ff1d;
-}
+svg rect {
+  fill: #e2ff1d; }
 
-
-
+/*# sourceMappingURL=main.css.map */
