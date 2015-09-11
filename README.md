@@ -33,3 +33,10 @@ grunt
 ```
 
 Any changes now made within /js/src will be picked up and transpiled into the /builds folder. 
+
+
+cd /app and run 
+
+```
+live-server
+```
