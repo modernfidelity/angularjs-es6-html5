@@ -25,7 +25,7 @@
   "jspm": {
     "directories": {
       "lib": ".",
-      "packages": "jspm_packages"
+      "packages": "app/jspm_packages"
     },
     "dependencies": {
       "grunt": "^0.4.5",
